@@ -1,0 +1,42 @@
+return_id,order_id,product_id,return_reason,return_status,refund_amount,refund_status,return_date
+R7003,O9003,P1117,Defective,Approved,2163,Pending,2026-01-02
+R7006,O9006,P1004,Wrong Item,Approved,1188,Completed,2026-01-06
+R7010,O9010,P1052,Wrong Item,Refunded,351,Pending,2026-01-01
+R7012,O9012,P1072,Not Needed,Refunded,3432,Pending,2026-01-02
+R7016,O9016,P1027,Not Needed,Requested,6782,Pending,2026-01-06
+R7018,O9018,P1032,Not Needed,Refunded,4564,Pending,2026-01-04
+R7020,O9020,P1133,Defective,Requested,7714,Completed,2026-01-03
+R7022,O9022,P1040,Wrong Item,Requested,9694,Completed,2026-01-06
+R7023,O9023,P1050,Defective,Approved,8532,Pending,2026-01-07
+R7026,O9026,P1134,Wrong Item,Approved,1752,Completed,2026-01-03
+R7028,O9028,P1030,Defective,Requested,990,Pending,2026-01-07
+R7029,O9029,P1107,Not Needed,Approved,7037,Completed,2026-01-07
+R7033,O9033,P1097,Not Needed,Approved,4525,Completed,2026-01-01
+R7036,O9036,P1069,Defective,Refunded,5362,Completed,2026-01-01
+R7040,O9040,P1011,Defective,Refunded,2377,Pending,2026-01-02
+R7044,O9044,P1081,Defective,Refunded,3181,Pending,2026-01-07
+R7053,O9053,P1023,Defective,Approved,9295,Pending,2026-01-02
+R7058,O9058,P1057,Defective,Requested,1490,Completed,2026-01-04
+R7063,O9063,P1142,Defective,Refunded,5331,Completed,2026-01-05
+R7069,O9069,P1048,Wrong Item,Requested,9327,Pending,2026-01-02
+R7078,O9078,P1102,Wrong Item,Refunded,156,Completed,2026-01-04
+R7082,O9082,P1065,Not Needed,Approved,1820,Completed,2026-01-02
+R7089,O9089,P1138,Defective,Requested,3111,Completed,2026-01-03
+R7096,O9096,P1055,Wrong Item,Refunded,2607,Completed,2026-01-02
+R7097,O9097,P1030,Defective,Requested,2715,Pending,2026-01-03
+R7098,O9098,P1031,Not Needed,Requested,9024,Completed,2026-01-05
+R7102,O9102,P1003,Not Needed,Requested,3537,Pending,2026-01-04
+R7104,O9104,P1027,Not Needed,Requested,2407,Pending,2026-01-03
+R7106,O9106,P1073,Not Needed,Requested,2566,Completed,2026-01-02
+R7107,O9107,P1049,Defective,Requested,3537,Pending,2026-01-06
+R7109,O9109,P1126,Wrong Item,Refunded,5744,Completed,2026-01-05
+R7114,O9114,P1029,Defective,Refunded,1525,Pending,2026-01-05
+R7115,O9115,P1124,Not Needed,Requested,8772,Pending,2026-01-07
+R7118,O9118,P1032,Defective,Approved,3372,Pending,2026-01-06
+R7123,O9123,P1024,Defective,Requested,4238,Completed,2026-01-04
+R7124,O9124,P1016,Not Needed,Requested,3152,Completed,2026-01-04
+R7126,O9126,P1123,Defective,Requested,2432,Pending,2026-01-02
+R7128,O9128,P1040,Wrong Item,Approved,8549,Completed,2026-01-08
+R7131,O9131,P1093,Not Needed,Refunded,8752,Completed,2026-01-05
+R7140,O9140,P1096,Defective,Refunded,962,Completed,2026-01-02
+R7145,O9145,P1088,Wrong Item,Approved,8996,Pending,2026-01-07

@@ -1,0 +1,255 @@
+===========================
+TEST CASE 1 – Product Lookup
+===========================
+
+Tool: get_product  
+Input:
+product_id = "P1002"
+
+Voice Prompt:
+"Tell me about product P1002"
+
+Expected MCP Response:
+- name: Water
+- category: Clothing
+- price: 6145 INR
+- rating: 4.5
+- stock_status: In Stock
+- returnable: No
+
+
+===========================
+TEST CASE 2 – Order Status
+===========================
+
+Tool: get_order_status  
+Input:
+order_id = "O9002"
+
+Voice Prompt:
+"Where is my order O9002?"
+
+Expected MCP Response:
+- customer_id: C5076
+- product_id: P1010
+- order_status: Shipped
+- delivery_status: Shipped
+- tracking_number: TRK10002
+
+
+===========================
+TEST CASE 3 – Delivery Tracking
+===========================
+
+Tool: get_delivery_status  
+Input:
+tracking_number = "TRK10002"
+
+Voice Prompt:
+"Track my shipment TRK10002"
+
+Expected MCP Response:
+- current_location: Michaelborough
+- delivery_stage: Shipped
+- delivery_agent: Donald
+
+
+===========================
+TEST CASE 4 – Return Status
+===========================
+
+Tool: get_return_status  
+Input:
+order_id = "O9003"
+
+Voice Prompt:
+"Has my order O9003 been returned?"
+
+Expected MCP Response:
+- return_reason: Defective
+- return_status: Approved
+- refund_amount: 2163
+- refund_status: Pending
+
+
+===========================
+TEST CASE 5 – Customer Orders
+===========================
+
+Tool: get_customer_orders  
+Input:
+customer_id = "C5124"
+
+Voice Prompt:
+"Show all my orders, I am customer C5124"
+
+Expected MCP Response:
+- O9008 → Delivered
+- O9009 → Delivered
+
+
+===========================
+TEST CASE 6 – Product Out of Stock
+===========================
+
+Tool: get_product  
+Input:
+product_id = "P1004"
+
+Voice Prompt:
+"Is product P1004 available?"
+
+Expected MCP Response:
+- name: Join
+- stock_status: Out of Stock
+- returnable: Yes
+
+
+===========================
+TEST CASE 7 – Processing Order
+===========================
+
+Tool: get_order_status  
+Input:
+order_id = "O9001"
+
+Voice Prompt:
+"Check order O9001"
+
+Expected MCP Response:
+- customer_id: C5116
+- order_status: Processing
+- delivery_status: Processing
+- tracking_number: TRK10001
+
+
+===========================
+TEST CASE 8 – Delivered Order
+===========================
+
+Tool: get_order_status  
+Input:
+order_id = "O9000"
+
+Voice Prompt:
+"Has order O9000 been delivered?"
+
+Expected MCP Response:
+- order_status: Delivered
+- payment_status: Paid
+- delivery_status: Delivered
+- tracking_number: TRK10000
+
+
+===========================
+TEST CASE 9 – Delivery Agent
+===========================
+
+Tool: get_delivery_status  
+Input:
+tracking_number = "TRK10000"
+
+Voice Prompt:
+"Who delivered my package TRK10000?"
+
+Expected MCP Response:
+- delivery_stage: Delivered
+- delivery_agent: Travis
+- current_location: South Jennifer
+
+
+===========================
+TEST CASE 10 – Store Policies
+===========================
+
+Tool: get_store_policies  
+
+Voice Prompt:
+"What is your return and refund policy?"
+
+Expected MCP Response:
+- delivery_time
+- return_window
+- refund_method
+- return_conditions
+- exchange_policy
+
+
+===========================
+TEST CASE 11 – Shipped Order
+===========================
+
+Tool: get_order_status  
+Input:
+order_id = "O9002"
+
+Voice Prompt:
+"Has my order O9002 been shipped?"
+
+Expected MCP Response:
+- order_status: Shipped
+- delivery_status: Shipped
+- tracking_number: TRK10002
+
+
+===========================
+TEST CASE 12 – Refund Check
+===========================
+
+Tool: get_return_status  
+Input:
+order_id = "O9003"
+
+Voice Prompt:
+"Is my refund still pending for order O9003?"
+
+Expected MCP Response:
+- refund_amount: 2163
+- refund_status: Pending
+
+
+===========================
+TEST CASE 13 – Delivery Stage
+===========================
+
+Tool: get_delivery_status  
+Input:
+tracking_number = "TRK10001"
+
+Voice Prompt:
+"Where is shipment TRK10001?"
+
+Expected MCP Response:
+- delivery_stage: Processing
+- delivery_agent: Donna
+
+
+===========================
+TEST CASE 14 – Product Warranty
+===========================
+
+Tool: get_product  
+Input:
+product_id = "P1001"
+
+Voice Prompt:
+"What is the warranty on product P1001?"
+
+Expected MCP Response:
+- warranty_months: 24
+- returnable: No
+
+
+===========================
+TEST CASE 15 – Missing Return
+===========================
+
+Tool: get_return_status  
+Input:
+order_id = "O9001"
+
+Voice Prompt:
+"Did I return order O9001?"
+
+Expected MCP Response:
+- status: No return found
