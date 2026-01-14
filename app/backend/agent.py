@@ -5,6 +5,7 @@ load_dotenv()
 
 from langchain_mcp_adapters.client import MultiServerMCPClient
 
+from openai.types import realtime
 
 from prompts import ECOMMERCE_GREET_INSTRUCTIONS,ECOMMERCE_INSTRUCTIONS
 
@@ -44,6 +45,18 @@ async def voice_agent(ctx:JobContext):
             voice="coral",
             temperature=1.0,
             api_key=os.getenv('OPENAI_API_KEY'),
+            input_audio_transcription=realtime.AudioTranscription(
+                model="gpt-4o-mini-transcribe-2025-12-15",
+                language='en'
+            ),
+            input_audio_noise_reduction="near_field",
+            turn_detection=realtime.realtime_audio_input_turn_detection.SemanticVad(
+                type="semantic_vad",
+                create_response=True,
+                eagerness="medium",
+                interrupt_response=False
+            )
+            
         ),
         mcp_servers=[mcp.MCPServerHTTP(url='http://localhost:8000/sse')]
     )
